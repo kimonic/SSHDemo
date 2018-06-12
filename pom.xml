@@ -148,6 +148,20 @@
             <version>1.2</version>
         </dependency>
 
+        <!-- Hibernate Validator 验证框架-->
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.10.Final</version>
+        </dependency>
+        <!--<dependency>-->
+        <!--http://maven.outofmemory.cn/org.hibernate/hibernate-validator/-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-validator</artifactId>-->
+            <!--<version>5.2.2.Final</version>-->
+        <!--</dependency>-->
+
 
         <!--mvn install:install-file-->
         <!-- -Dfile=F:\intellinj\maven\system-rules-1.3.0\system-rules-1.3.0.jar-->
