@@ -2,8 +2,9 @@ package mspring4.S_5_1.user;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.io.Serializable;
 
-public class User {
+public class User implements Serializable {
     @NotNull
     @Size(min = 2,max = 10,message = "错误!")
     private String name;

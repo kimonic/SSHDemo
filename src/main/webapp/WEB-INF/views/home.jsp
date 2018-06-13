@@ -6,6 +6,9 @@
     <link rel="stylesheet" 
           type="text/css" 
           href="<c:url value="/resources/style.css" />" >
+    <meta http-equiv="page-enter" content="revealtrans(duration=10,transition=1)">
+    <meta http-equiv="page-exist" content="revealtrans(duration=10,transition=8)">
+
   </head>
   <body>
     <h1>Welcome to Spitter</h1>
