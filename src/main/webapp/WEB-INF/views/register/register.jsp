@@ -13,7 +13,7 @@
 </head>
 <body>
 <sf:form method="post" commandName="user">
-    First name:<sf:input path="name"/>
+    First name:<sf:input path="name" placeholder="请输入用户名"/>
     <sf:errors path="name"/>
     Last name:<sf:input path="age"/>
     <sf:errors path="age"/>
@@ -21,6 +21,7 @@
     <sf:errors path="sex"/>
     <%--Username:<sf:input path="username"/>--%>
     <%--Password:<sf:input path="password"/>--%>
+    <input type="week" value="2011-W10">
     <input type="submit" value="register">
 </sf:form>
 

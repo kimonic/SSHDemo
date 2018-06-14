@@ -54,6 +54,13 @@ public class UserController {
         return "/register/register";
     }
 
+ @RequestMapping(value = "/register5", method = {RequestMethod.POST, RequestMethod.GET})
+    public String register5() {
+        System.out.println("访问进行---------------------------");
+
+        return "timg.jpg";
+    }
+
 
     @ResponseBody//加该注解后将直接返回json字符串,需要添加gson等json解析库
     @RequestMapping(value = "/register3", method = {RequestMethod.POST, RequestMethod.GET})
