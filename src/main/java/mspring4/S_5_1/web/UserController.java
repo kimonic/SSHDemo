@@ -56,8 +56,6 @@ public class UserController {
 
  @RequestMapping(value = "/register5", method = {RequestMethod.POST, RequestMethod.GET})
     public String register5() {
-        System.out.println("访问进行---------------------------");
-
         return "timg.jpg";
     }
 
@@ -75,4 +73,27 @@ public class UserController {
         user1.setAge(22);
         return user1;
     }
+
+    @RequestMapping(value = "/register6", method = {RequestMethod.POST, RequestMethod.GET})
+    public String register6() {
+        return "hehe";
+    }
+
+     @RequestMapping(value = "/register7", method = {RequestMethod.POST, RequestMethod.GET})
+    public String register7() {
+        return "sss";
+    }
+
+     @RequestMapping(value = "/register8", method = {RequestMethod.POST, RequestMethod.GET})
+    public String register8() {
+        return "iii";
+    }
+
+    @RequestMapping(value = "/register9", method = {RequestMethod.POST, RequestMethod.GET})
+    public String register9() {
+        return "timg";
+    }
+
+
+
 }

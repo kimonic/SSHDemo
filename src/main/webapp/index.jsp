@@ -20,11 +20,50 @@
     <meta http-equiv="page-exist" content="revealtrans(duration=10,transition=8)">
     <%--设置baseurl--%>
     <%--<base href="http://www.baidu.com" target="_top">--%>
+    <%--设置样式表语言--%>
+    <meta http-equiv="Content-Style-Type" content="text/css"/>
     <style type="text/css">
         body {
             background-repeat: no-repeat
         }
     </style>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script language="JavaScript">
+        document.write(navigator.appCodeName+"<br>");
+        document.write(navigator.appName+"<br>");
+        document.write(navigator.appVersion+"<br>");
+        document.write(navigator.language+"<br>");
+        document.write(navigator.mimeTypes+"<br>");
+        document.write(navigator.platform+"<br>");
+        document.write(navigator.plugins+"<br>");
+        document.write(screen.availHeight+"<br>");
+        document.write(screen.availWidth+"<br>");
+        document.write(screen.height+"<br>");
+        document.write(screen.width+"<br>");
+        document.write(screen.deviceXDPI+"<br>");
+        document.write(screen.deviceYDPI+"<br>");
+        document.write(screen.pixelDepth+"<br>");
+        document.write(screen.colorDepth+"<br>");
+        document.write(screen.logicalXDPI+"<br>");
+        console.log('控制台输出内容!');
+        function press() {
+            if (window.event.keyCode==32){
+                alert('你敲击了一下空格');
+            }
+            alert(window.event.keyCode);
+        }
+        window.onunload=function out() {
+            press();
+            // return '要退出吗e?';
+        }
+
+        function hhh() {
+            $(window).on('beforeunload',function(){return'Your own message goes here...';});
+        }
+    </script>
 </head>
 <%--<body text="blue" bgcolor="#7fffd4" background="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4060471883,2421439507&fm=27&gp=0.jpg"--%>
 <%--margintop="200" marginleft="200"  topmargin="200"  leftmargin="500"--%>
@@ -32,6 +71,10 @@
 <body>
 <h2>Hello World!</h2><br><br>
 <a href="/homepage">访问</a><br><br>
+<a href="/user/register6">访问666666</a><br><br>
+<a href="/user/register7">访问7</a><br><br>
+<a href="/user/register8">访问8</a><br><br>
+<a href="/user/register9">访问9</a><br><br>
 <a href="/user/register">注册</a><br><br>
 <a href="/user/register1">spring标签测试</a><br><br>
 <a href="/user/register2?name=sdyhifasidfhfsklahfsahfiosaf">spring标签测试1</a><br><br>
@@ -58,6 +101,11 @@
     </footer>
 </session>
 <br>
+<div align="center">
+    <div style="width: 300px;height: 300px;background-color: aquamarine;float: right;"></div>
+    <div style="width: 300px;height: 300px;background-color: red;margin: 0px"></div>
+
+</div>
 <canvas id="djx" width="300" height="300" style="border: 1px solid;">
 
 </canvas>
@@ -65,7 +113,6 @@
     function drawDiagonal() {
         var canvas = document.getElementById("djx");
         var context = canvas.getContext('2d');
-
 
 
         //绘制图片
@@ -210,14 +257,14 @@
 
         // 绘制对话框
         context.beginPath();
-        context.strokeStyle="#c00";
-        context.moveTo(75,25);
-        context.quadraticCurveTo(25,25,25,62.5);
-        context.quadraticCurveTo(25,100,50,100);
-        context.quadraticCurveTo(50,120,30,125);
-        context.quadraticCurveTo(60,120,65,100);
-        context.quadraticCurveTo(125,100,125,62.5);
-        context.quadraticCurveTo(125,25,75,25);
+        context.strokeStyle = "#c00";
+        context.moveTo(75, 25);
+        context.quadraticCurveTo(25, 25, 25, 62.5);
+        context.quadraticCurveTo(25, 100, 50, 100);
+        context.quadraticCurveTo(50, 120, 30, 125);
+        context.quadraticCurveTo(60, 120, 65, 100);
+        context.quadraticCurveTo(125, 100, 125, 62.5);
+        context.quadraticCurveTo(125, 25, 75, 25);
         // context.fill();
         context.stroke();
         context.toDataURL("/user/register5");
